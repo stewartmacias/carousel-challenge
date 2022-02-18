@@ -4,7 +4,7 @@ import '../../assets/styles/components/Card.css';
 
 const CardFunct = ({ cover, title, year, contentRating, duration }) => (
   <div className="card-item">
-  <img className="card-item__img" src={cover} alt={title}  />
+  <img className="card-item__img" src={cover} alt={title} />
   <div className="card-item__details">
     <div>
     </div>
@@ -17,11 +17,18 @@ const CardFunct = ({ cover, title, year, contentRating, duration }) => (
 );
 
 CardFunct.propTypes = {
-    cover: PropTypes.string,
+    cover: PropTypes.string.isRequired,
     title: PropTypes.string,
-    year: PropTypes.number,
+    year: PropTypes.string,
     contentRating: PropTypes.string,
-    duration: PropTypes.number,
+    duration: PropTypes.string,
   };
+CardFunct.defaultProps = {
+    cover: 'http://dummyimage.com/800x600.png/577380/ffffff',
+    title: '',
+    year: '',
+    contentRating: '',
+    duration: '',
+}
 
 export default CardFunct;

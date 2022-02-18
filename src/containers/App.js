@@ -1,14 +1,14 @@
 import React from 'react';
 import '../assets/styles/App.css';
-import SliderClass from './SliderClass';
-import SliderComponent from './SliderComponent';
+import ClassChallenge from './ClassChallenge';
+import ComponentChallenge from './ComponentChallenge';
 class App extends React.Component {
 
     render() {
         return (
             <div className="App">
-                <SliderClass initialState={this.props.initialState} />
-                <SliderComponent initialState={this.props.initialState} />
+                <ClassChallenge />
+                <ComponentChallenge />
             </div>
         );
     }
