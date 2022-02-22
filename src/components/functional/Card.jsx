@@ -24,7 +24,6 @@ CardFunct.propTypes = {
     duration: PropTypes.string,
   };
 CardFunct.defaultProps = {
-    cover: 'http://dummyimage.com/800x600.png/577380/ffffff',
     title: '',
     year: '',
     contentRating: '',
